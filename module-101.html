@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launch into Computing — MSc Computer Science Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <!-- ============ SPINE / NAV ============
+       Copy this whole block onto every page. Only change which <li> has
+       class="is-current", and add a new <li> here whenever you add a module. -->
+  <aside class="spine">
+    <p class="spine__mark">SYLVANUS KOBLA SEGO<span>.</span></p>
+    <p class="spine__role">MSc Computer Science — Learning Portfolio</p>
+
+    <nav aria-label="Portfolio navigation">
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+      </ul>
+
+      <p class="spine__section-label">Year 1</p>
+      <ul>
+        <li>
+          <a href="module-1.html" class="is-current">
+            Launch into Computing
+            <span class="spine__module-code">COMP101 · Semester 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="module-template.html">
+            + Duplicate module-template.html for each new module
+          </a>
+        </li>
+      </ul>
+
+      <!-- Add a second <p class="spine__section-label">Year 2</p> + <ul> block
+           once Year 2 modules start. -->
+    </nav>
+  </aside>
+  <!-- ============ END SPINE ============ -->
+
+  <main class="page">
+    <div class="page__inner">
+
+      <div class="module-header">
+        <p class="code">COMP101 · Semester 1, Year 1</p>
+        <h1>Launch into Computing</h1>
+        <p class="lede">
+          A core MSc module covering the fundamentals of computing, assessed
+          through a group coursework project and an individual written report.
+        </p>
+      </div>
+
+      <!-- 1. LEARNING OUTCOMES ================================================= -->
+      <section id="outcomes">
+        <div class="section-heading">
+          <h2>Learning outcomes</h2>
+          <span class="hint">as set by the module</span>
+        </div>
+        <ol class="outcome-list">
+          <li>Identify and critically analyse computing challenges and processes in business systems, 
+            accounting for the current enterprise landscape.</li>
+          <li>Gather and synthesise information from multiple sources (including internet resources and 
+            business publications) to aid in the systematic design and analysis of computing challenges.</li>
+          <li>Critically evaluate appropriate methodologies, tools and techniques to mitigate and/or 
+            solve computing issues and their business impact.</li>
+          <li>Articulate the legal, social, ethical, and professional issues faced by computing 
+            professionals.</li>
+            
+        </ol>
+      </section>
+
+      <!-- 2. ARTEFACTS ========================================================== -->
+      <section id="artefacts">
+        <div class="section-heading">
+          <h2>Artefacts</h2>
+          <span class="hint">what you produced, and the feedback it received</span>
+        </div>
+        <div class="artefact-grid">
+
+          <article class="artefact">
+            <p class="desc">
+              Various group discussions concerning computing principles, processes, and methodologies; 
+              the utilization of different programming languages and tools to resolve problems and evaluate 
+              their business impact; and the identification of fundamental principles accompanied by a 
+              critical analysis of the challenges associated with software engineering, cybersecurity, and 
+              artificial intelligence.
+              Expressing thoughts and ideas clearly and effectively on legal, social and ethical issues 
+              affecting computing professionals, with accompanying model cards.
+              <a href="https://github.com/yourusername/churn-classifier">View on GitHub</a>
+            </p>
+            <div class="feedback">
+              <span class="who">Feedback — Module convenor</span>
+              Strong feature engineering and a well-justified model choice; the
+              evaluation section needed a clearer discussion of class imbalance.
+            </div>
+
+      </section>
+
+      <!-- 3. REFLECTIVE PIECE =================================================== -->
+      <section id="reflection">
+        <div class="section-heading">
+          <h2>Reflection</h2>
+          <span class="hint">what did I actually learn, and how?</span>
+        </div>
+        <div class="reflection">
+          <p>
+            Coming into this module with a software engineering background rather
+            than a statistics one, the biggest adjustment was learning to treat model
+            evaluation as an argument to be made, not a single accuracy number to
+            report. Building the churn classifier as a group forced me to defend
+            modelling choices out loud, which surfaced assumptions I hadn't noticed
+            I was making about the data.
+          </p>
+          <p>
+            The convenor's feedback on class imbalance was the clearest lesson: a
+            high accuracy score had hidden a model that was barely better than
+            predicting the majority class. Going forward I want to check class
+            balance and baseline performance before trusting any headline metric.
+          </p>
+        </div>
+      </section>
+
+      
+
+      <!-- 4. PROFESSIONAL SKILLS MATRIX + ACTION PLAN ========================== -->
+      <section id="skills">
+        <div class="section-heading">
+          <h2>Professional skills</h2>
+          <span class="hint">gained or enhanced this module, and how to use them</span>
+        </div>
+        <p>
+          This module has helped me develop a more nuanced understanding of model evaluation and the 
+          importance of considering class imbalance. I've also improved my ability to communicate technical 
+          concepts effectively in writing.
+        </p>
+        <div class="action-plan">
+          <h3>Action plan</h3>
+          <ul>
+            <li>Check class/label balance and a baseline score before trusting any accuracy figure, starting with next semester's data mining module.</li>
+            <li>Practise writing shorter, more critical evaluation sections — aim to state a limitation before a marker has to ask for one.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>Last updated: November 2025</span>
+        <span><a href="index.html">← Back to About Me</a></span>
+      </footer>
+
+    </div>
+  </main>
+</div>
+</body>
+</html>
