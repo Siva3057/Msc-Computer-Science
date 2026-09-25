@@ -1,1 +1,1 @@
-# master-computer-science
+# masters-computer-science
